@@ -2,7 +2,7 @@
 readme_content = """
 # JobPost
 
-![JobPost Logo](link-to-logo-if-any)
+![JobPost Logo]("./../src/assets/Screenshot%20(738).png")
 
 ## Overview
 
