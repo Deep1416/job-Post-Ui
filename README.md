@@ -1,8 +1,8 @@
-# Creating the content for the README.md file
-readme_content = """
+
+
 # JobPost
 
-![JobPost Logo]("./../src/assets/Screenshot%20(738).png")
+![JobPost Logo]("./src/assets/jobpost.png")
 
 ## Overview
 
