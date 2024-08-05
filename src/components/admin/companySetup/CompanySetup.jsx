@@ -58,7 +58,7 @@ const CompanySetup = () => {
           withCredentials: true,
         }
       );
-      if (res.data.success) {
+      if (res?.data.success) {
         toast.success(res.data.message);
         navigate("/admin/companies");
       }

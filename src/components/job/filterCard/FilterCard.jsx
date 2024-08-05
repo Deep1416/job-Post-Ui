@@ -14,11 +14,10 @@ const filterData = [
     array: [
       "Frontend Developer",
       "Backend Developer",
-      "FullStack Developer",
+      "Full Stack Developer",
       "Data Scientist",
       "DevOps Engineer",
       "UI/UX Designer",
-
       "Mobile Developer",
     ],
   },
@@ -26,11 +25,9 @@ const filterData = [
     filterType: "Salary",
     array: [
       "0-40k",
-      "42k-1lakh",
+      "40k-1lakh",
       "1lakh-5lakh",
-      "5lakh-10lakh",
-     
-      
+      "5lakh-10lakh",  
     ],
   },
 ];

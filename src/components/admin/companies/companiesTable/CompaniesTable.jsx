@@ -14,22 +14,20 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Edit2, MoreHorizontal } from "lucide-react";
-
 import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-
 const CompaniesTable = () => {
   const navigate = useNavigate();
   const { companies, searchCompanyByText } = useSelector(
-    (store) => store.company
+    (store) => store?.company
   );
   const [filterCompany, setFilterCompany] = useState(companies);
 
   useEffect(() => {
     const filteredCompany =
-      companies.length > 0 &&
-      companies.filter((company) => {
+      companies?.length > 0 &&
+      companies?.filter((company) => {
         if (!searchCompanyByText) {
           return true;
         } else {
@@ -61,7 +59,7 @@ const CompaniesTable = () => {
                   <AvatarImage src={company.logo} />
                 </Avatar>
               </TableCell>
-              <TableCell>{company.name}</TableCell>
+              <TableCell>{company?.name}</TableCell>
               <TableCell>{company.createdAt.split("T")[0]}</TableCell>
               <TableCell className="text-right cursor-pointer">
                 <Popover>
@@ -71,7 +69,7 @@ const CompaniesTable = () => {
                   <PopoverContent className="w-32">
                     <div
                       onClick={() =>
-                        navigate(`/admin/companies/${company._id}`)
+                        navigate(`/admin/companies/${company?._id}`)
                       }
                       className="flex items-center gap-2 w-fit cursor-pointer"
                     >

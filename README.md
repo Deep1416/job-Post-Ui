@@ -2,7 +2,7 @@
 
 # JobPost
 
-![JobPost Logo]("./src/assets/jobpost.png")
+![JobPost Logo]("jobpost.png")
 
 ## Overview
 
