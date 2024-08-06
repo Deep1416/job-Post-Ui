@@ -2,7 +2,7 @@
 
 # JobPost
 
-![JobPost Logo]("jobpost.png")
+![JobPost Logo]("./jobpost.png")
 
 ## Overview
 
